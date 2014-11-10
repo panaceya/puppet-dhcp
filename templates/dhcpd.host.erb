@@ -3,6 +3,6 @@ host <%= @host %> {
   fixed-address       <%= @ip %>;
   ddns-hostname       "<%= @name %>";
   <% if has_variable?( 'hostname' ) -%>
-   option host-name    "<%= @hostname %>";
+  option host-name    "<%= @name %>.<%= @dnsdomain.first %>";
   <% end -%>
 }

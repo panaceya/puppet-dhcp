@@ -50,6 +50,10 @@ Create host reservations.
       'server3': mac => "00:50:56:00:00:03", ip => "10.0.1.53";
     }
 
+## History and changes
+* Mon 10 Nov 2014 - Add hostname to template templates/dhcpd.host.erb
+* Mon 10 Nov 2014 - Create fork https://github.com/theforeman/puppet-dhcp
+
 ## Contributors
 Zach Leslie <zach.leslie@gmail.com>
 Ben Hughes <git@mumble.org.uk>

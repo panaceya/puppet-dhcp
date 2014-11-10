@@ -2,7 +2,7 @@ host <%= @host %> {
   hardware ethernet   <%= @mac %>;
   fixed-address       <%= @ip %>;
   ddns-hostname       "<%= @name %>";
-  <% if has_variable?( 'hostname' ) -%>
-  option host-name    "<%= @name %>.<%= @domain.first %>";
+  <% if has_variable?( 'hostname' ) and @hostname -%>
+  option host-name    "<%= @name %>.<%= @dnsdomain.first %>";
   <% end -%>
 }

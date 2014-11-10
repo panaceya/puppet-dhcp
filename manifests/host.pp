@@ -1,7 +1,8 @@
 define dhcp::host (
     $ip,
     $mac,
-    $comment=''
+    $comment='',
+    $hostname=undef
   ) {
 
   $host = $name
